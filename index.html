@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahsulot Katalogi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mahsulot Katalogi</h1>
+        <div class="controls">
+            <select id="categoryFilter">
+                <option value="all">Barcha Kategoriyalar</option>
+                <option value="men's clothing">Men's clothing</option>
+                <option value="women's clothing">Women's clothing</option>
+                <option value="jewelery">Jewelery</option>
+                <option value="electronics">Electronics</option>
+            </select>
+            <select id="sortPrice">
+                <option value="default">Narx bo'yicha sarala</option>
+                <option value="asc">Arzondan qimmatga</option>
+                <option value="desc">Qimmatdan arzoniga</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Mahsulot qidirish...">
+        </div>
+        <div id="productList" class="product-list"></div>
+    </div>
+    <footer>
+        © 2024 Mahsulot Katalogi
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
